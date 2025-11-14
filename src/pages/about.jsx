@@ -9,7 +9,7 @@ const About = () => {
         cap, filter by name or symbol, and sort them by price, market cap or
         24hr change
       </p>
-      <p>This project uses CoinGejo external API to receive the data.</p>
+      <p>This project uses CoinGecko external API to receive the data.</p>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const App = () => {
       const res = await fetch(
         `${API_URL}&order=market_cap_desc&per_page=${limit}&page=1&sparkline=false`
       );
-      if (!res.ok) throw new Error('Failed to fetch data');
+      if (!res.ok) throw new Error('Coins not fetched - too many requests to API');
       const data = await res.json();
       setCoins(data);
     } catch (error) {

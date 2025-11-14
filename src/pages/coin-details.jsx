@@ -13,7 +13,7 @@ const CoinDetails = () => {
   const fetchCoin = async () => {
     try {
       const res = await fetch(`${COINS_API_URL}/${id}`);
-      if (!res.ok) throw new Error('Coin not fetched');
+      if (!res.ok) throw new Error('Coin not fetched - too many requests to API');
       const data = await res.json();
       setCoin(data);
     } catch (error) {
